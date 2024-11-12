@@ -1,0 +1,17 @@
+class RPGinfo:
+    author = "Unknown"
+    def __init__(self,game_name):
+        self.game_name = game_name
+    def welcome(self):
+        print(f"welcome to {self.game_name}")
+    @staticmethod
+    def info():
+        print("a short game created as part of an OOP Course. the different buildings are connected by roads.")
+        print("you can move around by typing in north,east,south,west or in between when prompted to, to move around. ")
+        print("you can alternatively type in go inside or inside to go inside buildings and see what is inside, where there may be items in the room, in which \ncase you may type the name of the item to add to your inventory.")
+        print("you may meet some people in certain rooms, be sure to talk to them, or fight them, its up to you.")
+        print("you may also type inventory to see your inventory")
+        print("please note, you do not have infinite inventory. there is no 'end' to the game, unless you die, as it is more of an exploration game.")
+    @classmethod
+    def credits(cls):
+        print(f"thanks for playing\ncreated by {cls.author}")
